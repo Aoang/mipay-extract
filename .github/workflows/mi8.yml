@@ -22,7 +22,20 @@ jobs:
         python-version: 2.7
 
     - name: Build
-      run:  unset _JAVA_OPTIONS && bash mi8.sh
+      run: |
+        unset _JAVA_OPTIONS
+        bash mi8.sh
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
 
     - name: Release
       uses: softprops/action-gh-release@v1
