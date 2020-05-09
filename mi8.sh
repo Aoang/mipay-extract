@@ -1,14 +1,14 @@
 #!/bin/bash
 
 declare -a urls=(
-'https://hugeota.d.miui.com/20.4.30/miui_MI8_20.4.30_a164e72f37_10.0.zip'
+'https://bigota.d.miui.com/20.5.7/miui_MI8_20.5.7_50340d2975_10.0.zip'
 
 )
 
-EU_VER=20.4.30
+EU_VER=20.5.7
 
 declare -a eu_urls=(
-'https://astuteinternet.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.4.30/xiaomi.eu_multi_MI8_20.4.30_v12-10.zip'
+'https://phoenixnap.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.5.7/xiaomi.eu_multi_MI8_20.5.7_v12-10.zip'
 )
 
 command -v dirname >/dev/null 2>&1 && cd "$(dirname "$0")"
