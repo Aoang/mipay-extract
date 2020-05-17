@@ -39,4 +39,22 @@ for i in "${eu_urls[@]}"
 do
    bash cleaner-fix.sh "$i" || exit 1
 done
+
+
+
+echo "id=mipay-mi8" > magisk/module.prop
+echo "name=MiPay for Mi8" >> magisk/module.prop
+echo version=`date +"%Y-%m-%d"` >> magisk/module.prop
+echo versionCode=`date +"%Y%m%d"` >> magisk/module.prop
+echo "author=Aoang" >> magisk/module.prop
+echo "description=MIUI for eu MiPay" >> magisk/module.prop
+
+unzip -n -d magisk mipay-MI8-*.zip
+unzip -n -d magisk eufix-appvault-MI8-*.zip
+unzip -n -d magisk eufix-MI8-*.zip
+
+cd magisk && zip -q -r ../mipay-magisk.zip *
+
+
+
 exit 0
