@@ -5,7 +5,7 @@ declare -a urls=(
 
 )
 
-EU_VER=20.5.7
+EU_VER=20.5.14
 
 declare -a eu_urls=(
 'https://cfhcable.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.5.14/xiaomi.eu_multi_MI8_20.5.14_v12-10.zip'
