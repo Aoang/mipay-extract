@@ -5,7 +5,7 @@ declare -a urls=(
 
 )
 
-EU_VER=20.6.11
+EU_VER=20.6.18
 
 declare -a eu_urls=(
 'https://phoenixnap.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.6.18/xiaomi.eu_multi_MI8_20.6.18_v12-10.zip'
