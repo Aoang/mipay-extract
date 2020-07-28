@@ -24,16 +24,16 @@ jobs:
     - name: Build
       run: |
         unset _JAVA_OPTIONS
-        bash mi8.sh
+        bash build.sh
 
     - name: Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
         files: |
-            mipay-MI8-*.zip
-            eufix-MI8-*.zip
-            eufix-appvault-MI8-*.zip
+            mipay-*.zip
+            eufix-*.zip
+            eufix-appvault-*.zip
             eufix-force-fbe-oreo.zip
             mipay-magisk.zip
       env:
