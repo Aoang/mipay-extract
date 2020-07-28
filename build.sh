@@ -24,9 +24,9 @@ if [[ "$1" == "rom" ]]; then
         $aria2c ${i//$EU_VER/$VER}
     done
     base_url="https://github.com/Aoang/mipay-extract/releases/download/$VER"
-    $aria2c $base_url/eufix-MI8-$VER.zip
-    $aria2c $base_url/mipay-MI8-$VER.zip
-    $aria2c $base_url/eufix-appvault-MI8-$VER.zip
+    $aria2c $base_url/eufix-MI10Pro-$VER.zip
+    $aria2c $base_url/mipay-MI10Pro-$VER.zip
+    $aria2c $base_url/eufix-appvault-MI10Pro-$VER.zip
     $aria2c $base_url/eufix-force-fbe-oreo.zip
     exit 0
 fi
@@ -49,9 +49,9 @@ echo versionCode=`date +"%Y%m%d"` >> magisk/module.prop
 echo "author=Aoang" >> magisk/module.prop
 echo "description=MIUI for eu MiPay" >> magisk/module.prop
 
-unzip -n -d magisk mipay-MI8-*.zip
-unzip -n -d magisk eufix-appvault-MI8-*.zip
-unzip -n -d magisk eufix-MI8-*.zip
+unzip -n -d magisk mipay-*.zip
+unzip -n -d magisk eufix-appvault-*.zip
+unzip -n -d magisk eufix-*.zip
 
 cd magisk && zip -q -r ../mipay-magisk.zip *
 
