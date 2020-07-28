@@ -51,7 +51,7 @@ echo "description=MIUI for eu MiPay" >> magisk/module.prop
 
 unzip -n -d magisk mipay-*.zip
 unzip -n -d magisk eufix-appvault-*.zip
-unzip -n -d magisk eufix-*.zip
+unzip -n -d magisk eufix-MI10Pro-*.zip
 
 cd magisk && zip -q -r ../mipay-magisk.zip *
 
