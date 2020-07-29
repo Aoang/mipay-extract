@@ -49,11 +49,12 @@ echo versionCode=`date +"%Y%m%d"` >> magisk/module.prop
 echo "author=Aoang" >> magisk/module.prop
 echo "description=MIUI for eu MiPay" >> magisk/module.prop
 
+rm eufix-force-fbe-oreo.zip
 unzip -n -d magisk mipay-*.zip
-unzip -n -d magisk eufix-appvault-MI10Pro-*.zip
+unzip -n -d magisk eufix-appvault-*.zip
 unzip -n -d magisk eufix-MI10Pro-*.zip
 
-cd magisk && zip -q -r ../mipay-magisk.zip *
+cd magisk && zip -q -r ../mipay-magisk-`date +"%Y%m%d"`.zip *
 
 
 
