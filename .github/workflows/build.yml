@@ -34,7 +34,6 @@ jobs:
             mipay-*.zip
             eufix-*.zip
             eufix-appvault-*.zip
-            eufix-force-fbe-oreo.zip
             mipay-magisk.zip
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
