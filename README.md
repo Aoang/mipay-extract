@@ -1,4 +1,4 @@
-# MIUI-EU China Fix (MI8)
+# MIUI-EU China Fix
 
 [![Build](https://github.com/Aoang/mipay-extract/workflows/Build/badge.svg)](https://github.com/Aoang/mipay-extract)
 [![Release](https://img.shields.io/github/v/release/Aoang/mipay-extract.svg)](https://github.com/Aoang/mipay-extract/releases/latest)
@@ -21,6 +21,5 @@
 2. 运行 `cleaner-fix.bat` 恢复中文功能
 
 ## TODO
-~~- 将刷机包整合为一个(已完成)~~
-- 改进链接获取方式(China MIUI 下载链接不公开)
-
+- 改进链接获取方式
+- 增加多机型支持
