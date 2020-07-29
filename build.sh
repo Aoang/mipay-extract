@@ -42,15 +42,15 @@ done
 
 
 
-echo "id=mipay-mi8" > magisk/module.prop
-echo "name=MiPay for Mi8" >> magisk/module.prop
+echo "id=mipay-extract" > magisk/module.prop
+echo "name=MiPay extract" >> magisk/module.prop
 echo version=`date +"%Y-%m-%d"` >> magisk/module.prop
 echo versionCode=`date +"%Y%m%d"` >> magisk/module.prop
 echo "author=Aoang" >> magisk/module.prop
 echo "description=MIUI for eu MiPay" >> magisk/module.prop
 
 unzip -n -d magisk mipay-*.zip
-unzip -n -d magisk eufix-appvault-*.zip
+unzip -n -d magisk eufix-appvault-MI10Pro-*.zip
 unzip -n -d magisk eufix-MI10Pro-*.zip
 
 cd magisk && zip -q -r ../mipay-magisk.zip *
